@@ -1,4 +1,4 @@
-package com.escola.legal.Resource;
+package com.escola.legal.resource;
 
 import java.util.Collection;
 
@@ -14,8 +14,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.escola.legal.Model.Empregado;
-import com.escola.legal.Service.EmpregadoService;
+import com.escola.legal.model.Empregado;
+import com.escola.legal.service.EmpregadoService;
 
 @RestController
 @RequestMapping("/empregado")
@@ -42,7 +42,7 @@ public class EmpregadoResource {
 	}
 	
 	@DeleteMapping("/v1/excluir/{codigo}")
-	public ResponseEntity<?> excluir(@PathVariable long codigo){
+	public ResponseEntity<Empregado> excluir(@PathVariable long codigo){
 		
 		try {
 			Empregado empregado = empregadoService.porId(codigo);
@@ -58,7 +58,7 @@ public class EmpregadoResource {
 	}
 	
 	@PutMapping("/v1/atualizar/{codigo}")
-	public ResponseEntity<?> atualizar(@PathVariable Long codigo, @RequestBody Empregado empregado){
+	public ResponseEntity<Empregado> atualizar(@PathVariable Long codigo, @RequestBody Empregado empregado){
 		try {
 			Empregado empregadoSalvo = empregadoService.porId(codigo);
 			if(empregadoSalvo != null) {

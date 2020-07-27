@@ -1,4 +1,4 @@
-package com.escola.legal.Model;
+package com.escola.legal.model;
 
 import java.io.Serializable;
 import java.util.Date;

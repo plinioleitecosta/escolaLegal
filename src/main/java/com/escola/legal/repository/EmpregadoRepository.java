@@ -1,8 +1,8 @@
-package com.escola.legal.Repository;
+package com.escola.legal.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import com.escola.legal.Model.Empregado;
+import com.escola.legal.model.Empregado;
 
 public interface EmpregadoRepository extends JpaRepository<Empregado, Long> {
 	
