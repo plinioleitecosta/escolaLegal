@@ -12,6 +12,11 @@ public class EscolaLegalApplication {
 		/*
 			Commit para teste 001
 		*/
+		
+		/*
+			Commit para teste 002
+		*/
+		
 	}
 
 }
