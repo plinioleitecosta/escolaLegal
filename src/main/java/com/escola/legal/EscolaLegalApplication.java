@@ -8,6 +8,10 @@ public class EscolaLegalApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(EscolaLegalApplication.class, args);
+		
+		/*
+			Commit para teste 001
+		*/
 	}
 
 }
